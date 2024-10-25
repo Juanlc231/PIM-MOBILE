@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.YourApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary theme color -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Translucent status bar -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- Layout with content behind the status bar -->
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+
+</resources>

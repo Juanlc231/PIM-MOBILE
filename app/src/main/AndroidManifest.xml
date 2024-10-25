@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/image_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/image_logo"
+        android:supportsRtl="true"
+        tools:targetApi="31"
+        android:theme="@style/Theme.YourApp">
+
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Outras Activities, como Login e Loja -->
+
+
+        <activity
+            android:name=".LojaActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".tela_login"
+            android:exported="true" />
+
+    </application>
+
+</manifest>
