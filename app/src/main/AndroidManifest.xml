@@ -35,6 +35,14 @@
             android:name=".tela_login"
             android:exported="true" />
 
+        <activity
+            android:name=".CarinhoActivity"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".StatusPedidoActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

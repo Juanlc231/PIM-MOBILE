@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A532B"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Status do Pedido -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status do Pedido"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- Status atual -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Em andamento"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <!-- Código do pedido -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#230LMCBHS06S"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="16dp" />
+
+        <!-- Lista de etapas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Etapa 1: Pedido Recebido -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="30dp"
+                android:gravity="center_vertical">
+
+                <!-- Ícone -->
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_pedido_recebido"
+                    app:tint="#81C784" />
+
+                <!-- Descrição -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pedido Recebido"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16 abr., 2024 / 21:35"
+                        android:textSize="12sp"
+                        android:textColor="#B0BEC5" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Repita blocos como este para cada etapa -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="30dp"
+                android:gravity="center_vertical">
+
+                <!-- Ícone -->
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_pagamento_recebido"
+                    app:tint="#81C784" />
+
+                <!-- Descrição -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pagamento Concluído"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16 abr., 2024 / 21:35"
+                        android:textSize="12sp"
+                        android:textColor="#B0BEC5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="30dp"
+                android:gravity="center_vertical">
+
+                <!-- Ícone -->
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_preparando_pedido"
+                    app:tint="#81C784" />
+
+                <!-- Descrição -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Preparando Pedido"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16 abr., 2024 / 21:35"
+                        android:textSize="12sp"
+                        android:textColor="#B0BEC5" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Exemplo para "Pedido Enviado" -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="30dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_pedido_enviado"
+                    app:tint="#81C784" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pedido Enviado"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17 abr., 2024 / 10:00"
+                        android:textSize="12sp"
+                        android:textColor="#B0BEC5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Etapa de previsão de entrega com cor amarela -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="30dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_previsao_entrega"
+                    app:tint="#FFEB3B" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Previsão de Entrega"
+                        android:textSize="16sp"
+                        android:textColor="#FFEB3B" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17 abr., 2024 / 12:00"
+                        android:textSize="12sp"
+                        android:textColor="#FFEB3B" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Botão Emitir Nota Fiscal -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emitir Nota Fiscal"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#000000"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
