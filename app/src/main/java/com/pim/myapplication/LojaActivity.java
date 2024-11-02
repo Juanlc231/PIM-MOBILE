@@ -32,8 +32,9 @@ public class LojaActivity extends AppCompatActivity {
         buttonCarrinho.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 // Iniciar a CarinhoActivity ao clicar no botão
-                Intent intent = new Intent(LojaActivity.this, CarinhoActivity.class);
+                Intent intent = new Intent(LojaActivity.this, CarrinhoActivity.class);
                 startActivity(intent);
             }
         });

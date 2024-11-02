@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Redirecionar para a CarinhoActivity
-                Intent intent = new Intent(MainActivity.this, CarinhoActivity.class);
+                Intent intent = new Intent(MainActivity.this, CarrinhoActivity.class);
                 startActivity(intent);
             }
         });
