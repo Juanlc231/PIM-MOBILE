@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="verde">#1a4413</color>
+    <color name="verde_claro">#77b255</color>
+    <color name="amarelo">#ffce38</color>
+    <color name="loja">#8ea944</color>
+    <color name="cor_top">#00DAD2</color>
+    <color name="vermelho">#ff0000</color>
+    <color name="verde_login">#3c7962</color>
+</resources>
