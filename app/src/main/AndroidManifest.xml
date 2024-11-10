@@ -16,10 +16,8 @@
         tools:targetApi="31"
         android:theme="@style/Theme.YourApp">
 
-
-
         <activity
-            android:name=".MainActivity"
+            android:name=".tela_login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,21 +25,25 @@
             </intent-filter>
         </activity>
 
-        <!-- Outras Activities, como Login e Loja -->
-
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
 
         <activity
             android:name=".LojaActivity"
             android:exported="true" />
 
         <activity
-            android:name=".tela_login"
+            android:name=".CarrinhoActivity"
             android:exported="true" />
 
         <activity
-            android:name=".CarinhoActivity"
+            android:name=".FreteActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".PagamentoActivity"
+            android:exported="true" />
 
         <activity
             android:name=".StatusPedidoActivity"

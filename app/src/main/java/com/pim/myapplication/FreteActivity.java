@@ -5,26 +5,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-public class tela_login extends AppCompatActivity {
-
+public class FreteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tela_login);
+        setContentView(R.layout.frete);
 
-
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button loginButton = findViewById(R.id.Entrar);
-
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"})
+        Button buttonFrete = findViewById(R.id.para_pagamento);
+        buttonFrete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(tela_login.this, MainActivity.class);
+                Intent intent = new Intent(FreteActivity.this, PagamentoActivity.class);
                 startActivity(intent);
             }
         });
-
-
     }
 }

@@ -9,7 +9,7 @@
 
 
 
-    <!-- Título da Loja -->
+
     <TextView
         android:id="@+id/text_loja"
         android:layout_width="wrap_content"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="16dp" />
 
-    <!-- Barra de Pesquisa -->
+
     <EditText
         android:id="@+id/search_bar"
         android:layout_width="0dp"
@@ -37,9 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp" />
 
-    <!-- Grid de Produtos -->
 
-    <!-- Botão para Ir ao Carrinho -->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"

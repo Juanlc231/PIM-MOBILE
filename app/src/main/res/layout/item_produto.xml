@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Primeiro produto -->
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -107,7 +107,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Continue com os outros produtos seguindo o mesmo padrão... -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

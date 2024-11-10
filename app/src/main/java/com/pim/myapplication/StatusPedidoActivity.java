@@ -8,6 +8,6 @@ public class StatusPedidoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.status_pedido); // Carrega o layout chamado status_pedido.xml
+        setContentView(R.layout.status_pedido);
     }
 }
