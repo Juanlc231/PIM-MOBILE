@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Meu Carrinho"
@@ -46,7 +46,7 @@
                     android:layout_height="50dp"
                     android:src="@drawable/maca" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/nome_produto1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -58,14 +58,14 @@
                     android:textStyle="bold"
                     tools:ignore="DuplicateIds" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/preco_produto1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/nome_produto1"
                     android:layout_toRightOf="@id/imagem_produto1"
                     android:layout_marginStart="8dp"
-                    android:text="R$ 18,87"
+                    android:text="18.87"
                     android:textSize="14sp"
                     android:textColor="#B0BEC5" />
 
@@ -83,11 +83,12 @@
                         android:backgroundTint="#607D8B"
                         android:textColor="#FFFFFF" />
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/quantidadeP"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1"
                         android:padding="8dp"
+                        android:text="1"
                         android:textColor="#FFFFFF" />
 
                     <Button
@@ -113,7 +114,7 @@
                     android:layout_height="50dp"
                     android:src="@drawable/banana" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/nome_produto2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -124,14 +125,14 @@
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/preco_produto2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/nome_produto2"
                     android:layout_toRightOf="@id/imagem_produto2"
                     android:layout_marginStart="8dp"
-                    android:text="R$ 18,87"
+                    android:text="18.87"
                     android:textSize="14sp"
                     android:textColor="#B0BEC5" />
 
@@ -149,7 +150,7 @@
                         android:backgroundTint="#607D8B"
                         android:textColor="#FFFFFF" />
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1"
@@ -179,7 +180,7 @@
                     android:layout_height="50dp"
                     android:src="@drawable/morango" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/nome_produto3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -190,14 +191,14 @@
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/preco_produto3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/nome_produto3"
                     android:layout_toRightOf="@id/imagem_produto3"
                     android:layout_marginStart="8dp"
-                    android:text="R$ 18,87"
+                    android:text="18.87"
                     android:textSize="14sp"
                     android:textColor="#B0BEC5" />
 
@@ -215,7 +216,7 @@
                         android:backgroundTint="#607D8B"
                         android:textColor="#FFFFFF" />
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1"
@@ -246,7 +247,7 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="8dp"
@@ -263,7 +264,7 @@
                 android:paddingTop="4dp"
                 android:paddingBottom="4dp">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -271,10 +272,11 @@
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/subtotal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="R$ 28,76"
+                    android:text="28.76"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
             </LinearLayout>

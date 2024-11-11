@@ -6,8 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView; // Certificando que estamos usando CardView
+import java.sql.Connection;
 
 public class MainActivity extends AppCompatActivity {
+    Connection con;
+    Conexao conexao =new Conexao();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
 
 
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) CardView cardCarrinho = findViewById(R.id.card_carrinho);
@@ -43,5 +47,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

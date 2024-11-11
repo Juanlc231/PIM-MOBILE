@@ -1,27 +1,55 @@
 package com.pim.myapplication;
 
-import android.content.Context;
 import java.sql.PreparedStatement;
+import java.sql.Connection;
+import android.content.Context;
+import java.sql.SQLException;
 
 public class CarinhoDados {
 
-    public static int insertCarrinho(CarrinhoD carrinhoD, Context ctx){ //CarrinhoD = Dados do carrinho
+    public static int insertCarrinho(CarrinhoD carrinhoD, Context ctx) {
         int resposta = 0;
+        Connection con = null;  // Definir a conexão aqui, para garantir que ela seja fechada no final
 
         try {
-            PreparedStatement pst = Conexao.conectar(ctx).prepareStatement(
-                    "Insert Into Carrinho(Produto,Preco,Quantidade,Subtotal" +
-                            "values(?,?,?,?)"//os itens "Produto,Preco,Quantidade,Subtotal" entraram aqui, nas interrogacoes.
-            );
-            pst.setString(1,carrinhoD.getProduto());
-            pst.setDouble(2,carrinhoD.getPreco());
-            pst.setInt(3,carrinhoD.getQuantidade());
-            pst.setDouble(4,carrinhoD.getSubtotal());
+            // Criando a instância da classe Conexao e obtendo a conexão
+            con = new Conexao().conectar();
 
-            resposta = pst.executeUpdate();
-        }catch (Exception e)  {
-            e.getMessage();
+            if (con != null) {
+                // SQL corrigido
+                String sql = "INSERT INTO Carrinho (Produto, Preco, Quantidade, Subtotal) VALUES (?, ?, ?, ?)";
+                PreparedStatement pst = con.prepareStatement(sql);
+
+                // Configura os parâmetros da consulta SQL
+                pst.setString(1, carrinhoD.getProduto());
+                pst.setDouble(2, carrinhoD.getPreco());
+                pst.setInt(3, carrinhoD.getQuantidade());
+                pst.setDouble(4, carrinhoD.getSubtotal());
+
+                // Executa a atualização
+                resposta = pst.executeUpdate();
+                pst.close();  // Fechar o PreparedStatement
+
+            }
+        } catch (SQLException e) {
+            // Em caso de erro com o SQL
+            e.printStackTrace();  // Log de erro
+            resposta = -1;  // Retornar um valor de erro
+        } catch (Exception e) {
+            // Outros tipos de erro
+            e.printStackTrace();
+            resposta = -1;  // Retornar um valor de erro
+        } finally {
+            // Garantir que a conexão seja fechada
+            try {
+                if (con != null && !con.isClosed()) {
+                    con.close();  // Fechar a conexão
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
+
         return resposta;
     }
 }
