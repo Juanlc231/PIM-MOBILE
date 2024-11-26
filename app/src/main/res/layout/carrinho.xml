@@ -151,10 +151,11 @@
                         android:textColor="#FFFFFF" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/quantidadeP1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1"
                         android:padding="8dp"
+                        android:text="1"
                         android:textColor="#FFFFFF" />
 
                     <Button
@@ -217,10 +218,11 @@
                         android:textColor="#FFFFFF" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/quantidadeP2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1"
                         android:padding="8dp"
+                        android:text="1"
                         android:textColor="#FFFFFF" />
 
                     <Button

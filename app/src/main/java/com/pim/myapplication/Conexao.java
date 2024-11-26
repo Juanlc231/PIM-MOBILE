@@ -50,34 +50,4 @@ public class Conexao {
         return conn;
     }
 
-    // Método assíncrono para executar a conexão e retornar resultados
-    public void executarQuery(final String query) {
-        new AsyncTask<String, Void, ResultSet>() {
-
-            @Override
-            protected ResultSet doInBackground(String... params) {
-                Connection conn = null;
-                Statement stmt = null;
-                ResultSet resultSet = null;
-                try {
-                    conn = conectar();
-                    if (conn != null) {
-                        stmt = conn.createStatement();
-                        resultSet = stmt.executeQuery(params[0]);
-                    }
-                } catch (SQLException e) {
-                    Logger.getLogger(Conexao.class.getName()).log(Level.SEVERE, null, e);
-                }
-                return resultSet;
-            }
-
-            @Override
-            protected void onPostExecute(ResultSet resultSet) {
-                super.onPostExecute(resultSet);
-                // Aqui você pode processar os dados retornados pela consulta
-                // Exemplo: Percorrer o resultSet e mostrar os dados
-            }
-
-        }.execute(query);
-    }
 }

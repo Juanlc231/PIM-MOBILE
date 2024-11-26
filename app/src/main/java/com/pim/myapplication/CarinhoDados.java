@@ -16,7 +16,6 @@ public class CarinhoDados {
             con = new Conexao().conectar();
 
             if (con != null) {
-                // SQL corrigido
                 String sql = "INSERT INTO Carrinho (Produto, Preco, Quantidade, Subtotal) VALUES (?, ?, ?, ?)";
                 PreparedStatement pst = con.prepareStatement(sql);
 
@@ -33,8 +32,8 @@ public class CarinhoDados {
             }
         } catch (SQLException e) {
             // Em caso de erro com o SQL
-            e.printStackTrace();  // Log de erro
-            resposta = -1;  // Retornar um valor de erro
+            e.printStackTrace();
+            resposta = -1;
         } catch (Exception e) {
             // Outros tipos de erro
             e.printStackTrace();

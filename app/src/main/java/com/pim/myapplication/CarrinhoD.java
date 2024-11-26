@@ -16,32 +16,28 @@ public class CarrinhoD {
     public String getProduto() {
         return Produto;
     }
-
     public void setProduto(String produto) {
+
         Produto = produto;
     }
-
     public double getPreco() {
         return Preco;
     }
-
     public void setPreco(double preco) {
+
         Preco = preco;
     }
-
     public int getQuantidade() {
         return Quantidade;
     }
-
     public void setQuantidade(int quantidade) {
         Quantidade = quantidade;
     }
-
     public double getSubtotal() {
         return Subtotal;
     }
-
     public void setSubtotal(double subtotal) {
+
         Subtotal = subtotal;
     }
 }
